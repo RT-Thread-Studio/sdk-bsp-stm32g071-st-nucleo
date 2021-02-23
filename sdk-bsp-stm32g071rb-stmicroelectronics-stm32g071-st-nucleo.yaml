@@ -1,0 +1,102 @@
+board:
+  buy_url_cn: https://www.st.com/zh/evaluation-tools/nucleo-g071rb.html#sample-buy
+  buy_url_global: https://www.st.com/en/evaluation-tools/nucleo-g071rb.html#sample-buy
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: The STM32G071x8/xB mainstream microcontrollers are based on high-performance
+    Arm® Cortex®-M0+ 32-bit RISC core operating at up to 64 MHz frequency. Offering
+    a high level of integration, they are suitable for a wide range of applications
+    in consumer, industrial and appliance domains and ready for the Internet of Things
+    (IoT) solutions.
+  description_zh: STM32G071RB-Nucleo 开发板是 ST 官方推出的一款基于 ARM Cortex-M0+ 内核的开发板，最高主频为
+    64Mhz，该开发板具有丰富的扩展接口，可以方便验证 STM32G071RB 的芯片性能。
+  emulator_machine: ''
+  large_image: documents/images/board.jpg
+  name: STM32G071-ST-NUCLEO
+  price_cn: 89 CNY
+  price_global: 13.79 USD
+  sale_contact_cn: https://www.st.com/zh/evaluation-tools/nucleo-g071rb.html
+  sale_contact_global: https://www.st.com/en/evaluation-tools/nucleo-g071rb.html
+  small_image: documents/images/board_small.png
+  vendor: STMicroelectronics
+  version: 1.0.0
+chip:
+  chip_name: STM32G071RB
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32G0
+  source_freq: '8000000'
+  sub_series_name: STM32G071
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/dm00105928-getting-started-with-stm32-nucleo-board-software-development-tools-stmicroelectronics.pdf
+  title: dm00105928-getting-started-with-stm32-nucleo-board-software-development-tools-stmicroelectronics
+example_projects: []
+features:
+- 'MCU: STM32G071RB, main frequency 64MHz, 128KB Flash, 36KB RAM'
+- 'Keys: 1, User (with wake-up function, PC13)'
+- 'Keys: 1, User (with wake up function, PC13) Common interfaces: USB to serial port,
+  Arduino interface, etc'
+features_zh:
+- MCU：STM32G071RB，主频 64MHz，128KB FLASH ，36KB RAM
+- 按键：1个，user（兼具唤醒功能，PC13）
+- 常用接口：USB 转串口、arduino 接口等
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewp
+    - project.eww
+    - project.uvprojx
+    - README.md
+    - README_zh.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: stm32g071
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
